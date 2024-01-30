@@ -23,7 +23,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public ActionResult<List<Product>> GetProduct(string id)
+    public ActionResult<List<Product>> GetProduct(int id)
     {
         var product = context.Products.Find(id);
 
